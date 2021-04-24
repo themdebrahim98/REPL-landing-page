@@ -47,6 +47,7 @@ html{
     
     color: rgb(5, 5, 5);
     margin-left: 7px;
+    font-size: 18px;
 }
 
 
@@ -81,6 +82,7 @@ html{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    border-bottom: 2px solid black;
 }
 .nav-list{
     display: flex;
@@ -93,11 +95,10 @@ html{
     color: white;
     font-size: 19px;
     margin-left: 15px;
-    margin-top: 10px;
-  
- 
+    
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav-list ul li{
     display: inline-block;
