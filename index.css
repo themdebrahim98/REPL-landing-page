@@ -1,0 +1,232 @@
+*,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#landing-page{
+    width: 100%;
+    min-height: 50vh;
+    background-image:  url('./img/s3.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    
+}
+.heading-content{
+    z-index: 1;
+}
+
+.heading-content h1 span{
+    color: crimson;
+}
+
+.logo span{
+    color: crimson;
+}
+
+
+#landing-page::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+     position: absolute;
+     opacity: 0.5;
+     z-index: -1;
+
+  
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 1000;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 75px;
+    font-size: 35px;
+}
+
+.logo{
+    color: white;
+    font-size: 25px;
+    margin-left: 25px;
+}
+.nav-list ul li{
+    display: inline-block;
+    text-decoration: none;
+
+}
+.list  a{
+    display: block;
+    padding: 5px;
+    color: rgb(233, 5, 51);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: all .3s ease;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 10px;
+    color: black;
+    text-shadow: 0 5px 5px gray;
+    transition: all .3s ease;
+
+   
+}
+
+.list a:hover{
+    color:crimson;
+    padding-left: 25px;
+}
+.list{
+    background-color: rgb(255, 245, 245);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 100%;
+    z-index: 1;
+    width: 100vw;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+/* .nav-list ul{
+ 
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(31,30,31);
+    left: 100%;
+    top: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    z-index: 5;
+    transition: all .3s ease;
+} */
+
+.nav-list ul li a:hover{
+    color: crimson;
+
+}
+.hamburger{
+    position: absolute;
+    color: rgb(12, 12, 233);
+    z-index: 1445;
+
+    top: 0;
+    right: 0;
+
+}
+
+
+.container{
+    width: 100%;
+
+    height: 70vh;
+    margin: 0 auto;
+}
+.landing-page{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .heading-content{
+    color: rgb(167, 23, 23);
+} */
+#landing-page .heading-content h1{
+    color:rgb(235, 231, 236);
+    font-weight: 700;
+    font-size: 105px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 19px 5px 48px rgb(77, 17, 216)  ;
+}
+.heading-content p{
+    color: yellow;
+    font-size: 25px;
+}
+.btn{
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid crimson;
+    color: rgb(245, 245, 245);
+    margin: 15px 22px;
+    width: 250px;
+    background-color: transparent;
+    transition: all .3s ease ;
+  
+
+}
+.btn:hover{
+    background-color: crimson;
+    color: white;
+}
+.nav-list .list.active2{
+    left:0 ;
+}
+
+/* @media only  screen and (min-width:300px) {
+    .hamburger{
+        color: rgb(68, 0, 255);
+    }
+
+    
+  
+} */
+
+@media only  screen and (min-width:600px) {
+    .hamburger{
+        display: none;
+    }
+
+    .list{
+       position: initial;
+      height: auto;
+      display: block;
+      width: fit-content;
+      background-color: transparent;
+    }
+    .list a{
+        display: inline-block;
+        padding: 15px;
+        background-color: transparent;
+        color: white;
+        font-weight: 100px;
+        text-shadow: 0 0 0 white;
+        text-transform: capitalize;
+    }
+    .list a:hover{
+        padding:15px;
+        color: turquoise;
+    }
+    
+  
+}
