@@ -216,16 +216,16 @@ html{
     text-shadow: 19px 5px 48px rgb(77, 17, 216)  ;
 }
 .heading-content p{
-    color: yellow;
+    color:#fff;
     font-size: 18px;
 }
 .btn{
     font-size: 25px;
-    padding: 15px;
+    padding: 11px;
     border: 2px solid #ccc;
     color: rgb(245, 245, 245);
-    margin: 15px 22px;
-    width: 250px;
+    margin: 12px 19px;
+    width: 159px;
     background-color: transparent;
     font-weight: 5;
     transition: all .3s ease ;
