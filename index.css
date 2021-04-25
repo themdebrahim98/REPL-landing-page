@@ -28,7 +28,8 @@ html{
     position: relative;
 }
 .wave{
-    position: relative;
+    position: absolute;
+    bottom: 0;
   
 } 
 
