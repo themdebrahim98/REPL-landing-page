@@ -24,14 +24,14 @@ html{
     z-index: 1;
     
 }
-.web-design{
+/* .web-design{
     position: relative;
 }
 .wave{
-    position: absolute;
+    position: relative;
     bottom: 0;
   
-} 
+}  */
 
 .path{
     position: absolute;
