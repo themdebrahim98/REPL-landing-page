@@ -16,13 +16,25 @@ html{
 #landing-page{
     width: 100%;
     min-height: 50vh;
-    background-color: blue;
+    background: linear-gradient(45deg,rgb(187, 16, 230),rgb(17, 14, 224));
     
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
     
+}
+.web-design{
+    position: relative;
+}
+.wave{
+    position: relative;
+  
+} 
+
+.path{
+    position: absolute;
+
 }
 .heading-content{
     z-index: 1;
@@ -61,7 +73,7 @@ html{
 }
 
 
-#landing-page::after{
+/* #landing-page::after{
     position: absolute;
     content: " ";
     top: 0;
@@ -74,7 +86,7 @@ html{
      z-index: -1;
 
   
-}
+} */
 
 #nav{
     position: fixed;
@@ -87,12 +99,12 @@ html{
 
 .nav-bar{
     width: 100%;
-    background-color: #fafafa;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    border-bottom: 2px solid black;
+ 
 }
 .nav-list{
     display: flex;
@@ -119,7 +131,7 @@ html{
     font-weight: 900;
     margin: 10px;
     color: black;
-    text-shadow: 0 5px 5px gray;
+
     transition: all .3s ease;
 
    
@@ -134,11 +146,12 @@ html{
     font-size: 16px;
     padding: 16px 8px;
     text-decoration: none;
-    color: black;
+    color: rgb(251, 250, 250);
     transition: all .3s ease;
 }
 .sign-in a:hover{
     background-color:#ccc;
+    color: black;
 }
 
 .list a:hover{
@@ -184,7 +197,7 @@ html{
 }
 .hamburger{
     position: absolute;
-    color: rgb(12, 12, 233);
+    color:black;
     z-index: 1445;
 
     top: 0;
@@ -204,6 +217,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
 }
 /* .heading-content{
     color: rgb(167, 23, 23);
@@ -218,6 +232,8 @@ html{
 .heading-content p{
     color:#fff;
     font-size: 18px;
+    margin: 17px;
+    letter-spacing: 2px;
 }
 .btn{
     font-size: 25px;
@@ -264,10 +280,10 @@ html{
     .list a{
         display: inline-block;
         padding: 15px;
-        background-color: transparent;
-        color:black;
+      
+        color:white;
        font-size: 16px;
-        text-shadow: 0 0 0 white;
+    
         text-transform: capitalize;
         transition: all .3s ease;
 
