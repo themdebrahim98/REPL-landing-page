@@ -12,6 +12,7 @@ html{
    
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 #landing-page{
     width: 100%;
@@ -24,14 +25,14 @@ html{
     z-index: 1;
     
 }
-/* .web-design{
+.web-design{
     position: relative;
 }
 .wave{
     position: relative;
-    bottom: 0;
+    bottom: -45px;
   
-}  */
+}  
 
 .path{
     position: absolute;
@@ -299,6 +300,17 @@ html{
     .logo h1{
         letter-spacing: 16px;
     }
+  
     
   
 }
+
+@media screen and (max-width: 3750px) {
+  
+    .wave{
+        bottom: -24px;
+    }
+    /* CSS */
+    
+  }
+
